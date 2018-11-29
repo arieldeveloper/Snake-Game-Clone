@@ -237,9 +237,9 @@ goomba = pygame.image.load("goomba.png").convert_alpha()
 goomba = pygame.transform.scale(goomba, (badApple.size, badApple.size))
 ghostLeft = pygame.image.load("ghost-left.png").convert_alpha()
 ghostLeft = pygame.transform.scale(ghostLeft, (ghost.size, ghost.size))
-ghostRight = pygame.image.load("Images/ghost-right.png").convert_alpha()
+ghostRight = pygame.image.load("ghost-right.png").convert_alpha()
 ghostRight = pygame.transform.scale(ghostRight, (ghost.size, ghost.size))
-playerBody = pygame.image.load("Images/player-body.png").convert_alpha()
+playerBody = pygame.image.load("player-body.png").convert_alpha()
 playerBody = pygame.transform.scale(playerBody, (BODY_SIZE, BODY_SIZE))
 
 #Mario Heads
