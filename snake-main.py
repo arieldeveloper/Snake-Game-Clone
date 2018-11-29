@@ -44,10 +44,10 @@ snakeList = []
 smallText = 15
 mediumText = 18
 largeText = 40
-smallFont = pygame.font.Font("Fonts/font.ttf", smallText)  # create a variable font
-mediumFont = pygame.font.Font("Fonts/font.ttf", mediumText)  # create a variable font
-largeFont = pygame.font.Font("Fonts/font.ttf", largeText)  # create a variable font
-titleFont = pygame.font.Font("Fonts/titleFont.ttf", largeText + 8)
+smallFont = pygame.font.Font("font.ttf", smallText)  # create a variable font
+mediumFont = pygame.font.Font("font.ttf", mediumText)  # create a variable font
+largeFont = pygame.font.Font("font.ttf", largeText)  # create a variable font
+titleFont = pygame.font.Font("titleFont.ttf", largeText + 8)
 
 #Game Speed variables
 BODY_SIZE = 15
@@ -231,11 +231,11 @@ anotherGhost = Ghost()
 
 #Images
 #Obstacles
-mushroom = pygame.image.load("Images/mushroom.png").convert_alpha()
+mushroom = pygame.image.load("mushroom.png").convert_alpha()
 mushroom = pygame.transform.scale(mushroom, (goodApple.size, goodApple.size))
-goomba = pygame.image.load("Images/goomba.png").convert_alpha()
+goomba = pygame.image.load("goomba.png").convert_alpha()
 goomba = pygame.transform.scale(goomba, (badApple.size, badApple.size))
-ghostLeft = pygame.image.load("Images/ghost-left.png").convert_alpha()
+ghostLeft = pygame.image.load("ghost-left.png").convert_alpha()
 ghostLeft = pygame.transform.scale(ghostLeft, (ghost.size, ghost.size))
 ghostRight = pygame.image.load("Images/ghost-right.png").convert_alpha()
 ghostRight = pygame.transform.scale(ghostRight, (ghost.size, ghost.size))
@@ -243,42 +243,42 @@ playerBody = pygame.image.load("Images/player-body.png").convert_alpha()
 playerBody = pygame.transform.scale(playerBody, (BODY_SIZE, BODY_SIZE))
 
 #Mario Heads
-marioHeadLeft = pygame.image.load("Images/mario-left.png").convert_alpha()
+marioHeadLeft = pygame.image.load("mario-left.png").convert_alpha()
 marioHeadLeft = pygame.transform.scale(marioHeadLeft, (BODY_SIZE, BODY_SIZE))
-marioHeadRight = pygame.image.load("Images/mario-right.png").convert_alpha()
+marioHeadRight = pygame.image.load("mario-right.png").convert_alpha()
 marioHeadRight = pygame.transform.scale(marioHeadRight, (BODY_SIZE, BODY_SIZE))
-marioHeadUp = pygame.image.load("Images/mario-up.png").convert_alpha()
+marioHeadUp = pygame.image.load("mario-up.png").convert_alpha()
 marioHeadUp = pygame.transform.scale(marioHeadUp, (BODY_SIZE, BODY_SIZE))
-marioHeadDown = pygame.image.load("Images/mario-down.png").convert_alpha()
+marioHeadDown = pygame.image.load("mario-down.png").convert_alpha()
 marioHeadDown = pygame.transform.scale(marioHeadDown, (BODY_SIZE, BODY_SIZE))
 
 #Backgrounds
-background = pygame.image.load("Images/background.png")
+background = pygame.image.load("background.png")
 background = pygame.transform.scale(background, (screenX,screenY))
-introBackground = pygame.transform.scale(pygame.image.load("Images/intro-background.png"), (screenX, screenY))
+introBackground = pygame.transform.scale(pygame.image.load("intro-background.png"), (screenX, screenY))
 
 #Sound Effects
-powerupSound = pygame.mixer.Sound('Sounds/powerup.wav')   #
+powerupSound = pygame.mixer.Sound('powerup.wav')   #
 powerupSound.set_volume(0.3)
 
-timeWarningSound = pygame.mixer.Sound('Sounds/time-warning.wav')   #
+timeWarningSound = pygame.mixer.Sound('time-warning.wav')   #
 timeWarningSound.set_volume(0.3)
 
-marioDeadSound = pygame.mixer.Sound('Sounds/mariodead.wav')   #
+marioDeadSound = pygame.mixer.Sound('mariodead.wav')   #
 marioDeadSound.set_volume(0.3)
 
-gameoverSound = pygame.mixer.Sound('Sounds/gameover.wav')
+gameoverSound = pygame.mixer.Sound('gameover.wav')
 gameoverSound.set_volume(0.5)
 
-shrinkingSound = pygame.mixer.Sound('Sounds/shrink.wav')
+shrinkingSound = pygame.mixer.Sound('shrink.wav')
 shrinkingSound.set_volume(0.5)
 
-enterLevelSound = pygame.mixer.Sound('Sounds/enter-level.wav')
+enterLevelSound = pygame.mixer.Sound('enter-level.wav')
 enterLevelSound.set_volume(0.5)
 
 #Music
-ghostHouseMusic = pygame.mixer.Sound('Sounds/ghosthouse-music.wav')
-introMusic = pygame.mixer.Sound('Sounds/intro-music.wav')
+ghostHouseMusic = pygame.mixer.Sound('ghosthouse-music.wav')
+introMusic = pygame.mixer.Sound('intro-music.wav')
 
 #Put in a first snake to start off with
 snakeList = []
